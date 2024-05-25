@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<head>
+    
+    <title>New Blog Post Form </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid solidblack;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        textarea {
+            height: 150px;
+        }
+        button {
+            background-color: brown;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<h2>New Blog Post Form</h2>
+
+<form id="blogPostForm">
+    <label for="title">Blog Post Title:</label>
+    <input type="text" id="title" name="title" required>
+    
+    <label for="author">Author's Name:</label>
+    <input type="text" id="author" name="author" required>
+    
+    <label for="content">Blog Post Content:</label>
+    <textarea id="content" name="content" required></textarea>
+    
+    <label for="category">Blog Post Category:</label>
+    <select id="category" name="category" required>
+        <option value="Javascript Introduction">Javascript Introduction</option>
+        <option value="HTML Introduction">HTML Introduction</option>
+        <option value="CSS Styling techniques">CSS Styling techniques</option></option>
+        
+    </select>
+    
+    <button type="submit" onclick="submitForm()">Submit</button>
+</form>
+
+
+<script>
+    function submitForm() {
+        alert("Form submitted!");
+        // Add form submission functionality here
+    }
+
+    function showAlert() {
+        alert("Button clicked!");
+    }
+</script>
+
+</body>
+</html>
