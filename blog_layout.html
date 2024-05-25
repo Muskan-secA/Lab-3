@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<head>
+    
+    <title>My Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: lightyellow;
+            color:green;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: inline-block;
+            margin-top: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: lightgreen;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .main-content {
+            flex: 2;
+            background-color: lightcoral;
+            padding: 20px;
+            margin-right: 20px;
+        }
+        .sidebar {
+            flex: 1;
+            background-color: lightskyblue;
+            padding: 20px;
+        }
+        footer {
+            background-color: purple;
+            color: black;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="main-content">
+            <h2>Latest Posts</h2>
+            <div class="post">
+                <h3>HTML introduction</h3>
+                <p>HTML, or Hypertext Markup Language, is the standard markup language for creating web pages and web applications. </p>
+                <a href="#">Read more</a>
+            </div>
+            <div class="post">
+                <h3>Javascipt introduction</h3>
+                <p>JavaScript is a high-level, interpreted programming language primarily used for front-end web development. It enables interactive and dynamic behavior on websites, such as responding to user actions, updating content dynamically, and interacting with web APIs.</p>
+                <a href="#">Read more</a>
+            </div>
+        </div>
+        <div class="sidebar">
+            <h2>Sidebar</h2>
+            <ul>
+                <li><a href="https://www.bing.com/ck/a?!&&p=e9198d59110e26dbJmltdHM9MTcxNjUwODgwMCZpZ3VpZD0zY2Y1YWUyOS0yMDg3LTZhMWUtMTNhNS1iYTU2MjEyZDZiZWImaW5zaWQ9NTUwNQ&ptn=3&ver=2&hsh=3&fclid=3cf5ae29-2087-6a1e-13a5-ba56212d6beb&psq=introduction+of+HTML&u=a1aHR0cHM6Ly93d3cudzNzY2hvb2xzLmNvbS9odG1sL2h0bWxfaW50cm8uYXNw&ntb=1">Link 1</a></li>
+                <li><a href="https://www.bing.com/ck/a?!&&p=c3f9d79ba9b1cdb1JmltdHM9MTcxNjUwODgwMCZpZ3VpZD0zY2Y1YWUyOS0yMDg3LTZhMWUtMTNhNS1iYTU2MjEyZDZiZWImaW5zaWQ9NTUwNg&ptn=3&ver=2&hsh=3&fclid=3cf5ae29-2087-6a1e-13a5-ba56212d6beb&psq=introduction+of+javascript&u=a1aHR0cHM6Ly9kZXZlbG9wZXIubW96aWxsYS5vcmcvZW4tVVMvZG9jcy9XZWIvSmF2YVNjcmlwdC9HdWlkZS9JbnRyb2R1Y3Rpb24&ntb=1">Link 2</a></li>
+                <li><a href="https://www.bing.com/ck/a?!&&p=01f2ca491070760aJmltdHM9MTcxNjUwODgwMCZpZ3VpZD0zY2Y1YWUyOS0yMDg3LTZhMWUtMTNhNS1iYTU2MjEyZDZiZWImaW5zaWQ9NTQ5Nw&ptn=3&ver=2&hsh=3&fclid=3cf5ae29-2087-6a1e-13a5-ba56212d6beb&psq=css+style+technique&u=a1aHR0cHM6Ly93d3cudzNzY2hvb2xzLmNvbS9odG1sL2h0bWxfY3NzLmFzcA&ntb=1">Link 3</a></li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <p>Contact: muskan82722@gmail.com</p>
+    </footer>
+</body>
+</html>
